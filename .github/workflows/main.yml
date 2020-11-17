@@ -8,19 +8,18 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout actions
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
+    - name: Install Python
+      run: |
+        sudo apt update && \
+        sudo apt install python3 && \
+        pip3 install requests pycryptodome
 
-    - name: Update paper list
+    - name: Update README.md
       run: |
         python update.py
 
