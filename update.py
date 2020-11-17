@@ -11,19 +11,19 @@ title_list = html.xpath('//div[@class="list-group"]/a/span/text()')
 post_list = [f"- [{post[1]}]({post[0]})" for post in zip(url_list, title_list)]
 
 with open('README.md', 'w', encoding='utf-8') as f:
-    f.write(f'''### 👋 Hi there 
+    f.write(f'''## 👋 Hi there 
 
 I'm a programming amateur. I'd like to make some interesting and practical tools and share some thoughts on my blog.
 
-### 🎨 Latest blogs
+## 🎨 Latest blogs
 
 ''')
-    f.write('\n'.join(post_list))
+    f.write('\n'.join(post_list)[:4])
     f.write(f'''
 
 [>>> More]({domain}/archives/)
 
-### 🔰 Statistics 
+## 🔰 Statistics 
 
 ![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=reajason&layout=compact&theme=tokyonight)
