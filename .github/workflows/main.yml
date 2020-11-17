@@ -17,7 +17,7 @@ jobs:
       run: |
         sudo apt update && \
         sudo apt install python3 && \
-        pip3 install requests pycryptodome
+        pip3 install requests lxml
 
     - name: Update README.md
       run: |
