@@ -21,7 +21,7 @@ jobs:
 
     - name: Update README.md
       run: |
-        python update.py
+        python3 update.py
 
     - name: commit
       run: |
