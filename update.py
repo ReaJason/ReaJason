@@ -18,7 +18,7 @@ I'm a programming amateur. I'd like to make some interesting and practical tools
 ## 🎨 Latest blogs
 
 ''')
-    f.write('\n'.join(post_list)[:4])
+    f.write('\n'.join(post_list[:4]))
     f.write(f'''
 
 [>>> More]({domain}/archives/)
