@@ -1,0 +1,33 @@
+name: Update README.md
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout actions
+    - uses: actions/checkout@v1
+
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - name: Update paper list
+      run: |
+        python update.py
+
+    - name: commit
+      run: |
+        git config --global user.email 1587047405@qq.com
+        git config --global user.name ReaJason
+        git add .
+        git commit -m "update" -a
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
