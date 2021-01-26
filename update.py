@@ -18,12 +18,12 @@ I'm a programming amateur. I'd like to make some interesting and practical tools
 ## 🎨 Latest blogs
 
 ''')
-    f.write('\n'.join(post_list[:4]))
+    f.write('\n'.join(post_list[:3]))
     f.write(f'''
 
 [>>> More]({domain}/archives/)
 
 ## 🔰 Statistics 
 
-![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight)
+![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight&cache_seconds=1800)
 ''')
