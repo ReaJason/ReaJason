@@ -4,9 +4,9 @@ I'm a programming amateur. I'd like to make some interesting and practical tools
 
 ## 🎨 Latest blogs
 
+- [完美校园自动打卡](https://reajason.top/2021/03/19/17wanxiaoCheckInSCF/)
 - [微博超话签到工具](https://reajason.top/2021/02/04/WBTopicCheckTool/)
 - [Python语法学习](https://reajason.top/2021/01/19/PythonLearning/)
-- [Linux学习笔记（学习中...）](https://reajason.top/2021/01/18/LinuxLearning/)
 
 [>>> More](https://reajason.top/archives/)
 
