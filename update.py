@@ -11,9 +11,12 @@ title_list = html.xpath('//div[@class="list-group"]/a/span/text()')
 post_list = [f"- [{post[1]}]({post[0]})" for post in zip(url_list, title_list)]
 
 with open('README.md', 'w', encoding='utf-8') as f:
-    f.write(f'''## 👋 Hi there 
+    f.write(f'''## 👋 Hi there，I'm [ReaJason](https://reajason.top)
 
-I'm a programming amateur. I'd like to make some interesting and practical tools and share some thoughts on my blog.
+- ❄I'm a programming amateur.
+- 🔥I'm learning Data Structure & Algorithm.
+- ⚡I'm hunting for a back-end job
+- 📫contact me by reajason@163.com
 
 ## 🎨 Latest blogs
 
