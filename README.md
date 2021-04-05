@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [愚人节说再见](https://reajason.top/2021/04/01/AprilFools/)
 - [STL](https://reajason.top/2021/03/28/CppSTL/)
 - [完美校园自动打卡](https://reajason.top/2021/03/19/17wanxiaoCheckInSCF/)
-- [微博超话签到工具](https://reajason.top/2021/02/04/WBTopicCheckTool/)
 
 [>>> More](https://reajason.top/archives/)
 
