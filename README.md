@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [Waline 使用](https://reajason.top/2021/04/10/WalineUsage/)
 - [愚人节说再见](https://reajason.top/2021/04/01/AprilFools/)
 - [STL](https://reajason.top/2021/03/28/CppSTL/)
-- [完美校园自动打卡](https://reajason.top/2021/03/19/17wanxiaoCheckInSCF/)
 
 [>>> More](https://reajason.top/archives/)
 
