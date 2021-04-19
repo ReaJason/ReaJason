@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
-- [Waline 使用](https://reajason.top/2021/04/10/WalineUsage/)
-- [愚人节说再见](https://reajason.top/2021/04/01/AprilFools/)
-- [STL](https://reajason.top/2021/03/28/CppSTL/)
+- [Xposed Hook 完美校园获取本机 DeviceId](https://reajason.top/2021/04/18/17wanxiaoHookGetDeviceId/)
+- [毕业论文](https://reajason.top/2021/04/14/GraduationProject/)
+- [我的刷机之旅 — Redmi K20 Pro](https://reajason.top/2021/04/12/AndroidFlashRom/)
 
 [>>> More](https://reajason.top/archives/)
 
