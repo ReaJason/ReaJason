@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [Windows10 使用心得与总结（正在耕耘中）](https://reajason.top/2021/05/01/WindowsUsage/)
 - [Xposed Hook 完美校园获取本机 DeviceId](https://reajason.top/2021/04/18/17wanxiaoHookGetDeviceId/)
 - [毕业论文](https://reajason.top/2021/04/14/GraduationProject/)
-- [我的刷机之旅 — Redmi K20 Pro](https://reajason.top/2021/04/12/AndroidFlashRom/)
 
 [>>> More](https://reajason.top/archives/)
 
