@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [毕业论文](https://reajason.top/2021/06/11/GraduationProject/)
 - [Windows10 使用心得与总结](https://reajason.top/2021/05/01/WindowsUsage/)
 - [Xposed Hook 完美校园获取本机 DeviceId](https://reajason.top/2021/04/18/17wanxiaoHookGetDeviceId/)
-- [毕业论文](https://reajason.top/2021/04/14/GraduationProject/)
 
 [>>> More](https://reajason.top/archives/)
 
