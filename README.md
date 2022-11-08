@@ -10,6 +10,6 @@ I'm a programming amateur. I'd like to make some interesting and practical tools
 
 [>>> More](https://reajason.top/archives/)
 
-## 🔰 Statistics 
+## 🔰 Statistics  
 
 ![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight&cache_seconds=1800)
