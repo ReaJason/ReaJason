@@ -3,7 +3,7 @@ from lxml import etree
 
 
 url = "https://cdn.jsdelivr.net/gh/ReaJason/reajason.github.io@master/archives/index.html"
-domain = "https://reajason.top"
+domain = "https://reajson.github.io"
 page_res = requests.get(url)
 html = etree.HTML(page_res.text)
 url_list = [f'{domain}{i}' for i in html.xpath('//div[@class="list-group"]/a/@href')]
@@ -26,7 +26,7 @@ with open('README.md', 'w', encoding='utf-8') as f:
 
 [>>> More]({domain}/archives/)
 
-## 🔰 Statistics 
+## 🔰 Statistics
 
 ![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight&cache_seconds=1800)
 ''')
