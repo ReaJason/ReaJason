@@ -2,12 +2,14 @@ import requests
 from lxml import etree
 
 
-url = "https://cdn.jsdelivr.net/gh/ReaJason/reajason.github.io@master/archives/index.html"
-domain = "https://reajson.github.io"
+url = "https://raw.fastgit.org/ReaJason/reajason.github.io/master/archives/index.html"
+domain = "https://reajason.github.io"
 page_res = requests.get(url)
 html = etree.HTML(page_res.text)
 url_list = [f'{domain}{i}' for i in html.xpath('//div[@class="list-group"]/a/@href')]
-title_list = html.xpath('//div[@class="list-group"]/a/span/text()')
+print(url_list)
+title_list = html.xpath('//div[@class="list-group"]/a/div/text()')
+print(title_list)
 post_list = [f"- [{post[1]}]({post[0]})" for post in zip(url_list, title_list)]
 
 with open('README.md', 'w', encoding='utf-8') as f:

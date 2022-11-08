@@ -1,15 +1,18 @@
-## 👋 Hi there 
+## 👋 Hi there，I'm [ReaJason](https://reajason.top)
 
-I'm a programming amateur. I'd like to make some interesting and practical tools and share some thoughts on my blog.
+- ❄I'm a programming amateur.
+- 🔥I'm learning Data Structure & Algorithm.
+- ⚡I'm hunting for a back-end job
+- 📫contact me by reajason@163.com
 
 ## 🎨 Latest blogs
 
-- [STL](https://reajason.top/2021/03/28/CppSTL/)
-- [完美校园自动打卡](https://reajason.top/2021/03/19/17wanxiaoCheckInSCF/)
-- [微博超话签到工具](https://reajason.top/2021/02/04/WBTopicCheckTool/)
+- [突如其来政策](https://reajason.github.io/2022/09/21/HardExperience/)
+- [记一次失败的项目经验](https://reajason.github.io/2022/07/11/FailureProjectExperience/)
+- [Code Completion 代码大全读书笔记](https://reajason.github.io/2022/05/05/CodeCompletion/)
 
-[>>> More](https://reajason.top/archives/)
+[>>> More](https://reajason.github.io/archives/)
 
-## 🔰 Statistics  
+## 🔰 Statistics
 
 ![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight&cache_seconds=1800)
