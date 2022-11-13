@@ -16,9 +16,9 @@ with open('README.md', 'w', encoding='utf-8') as f:
     f.write(f'''## 👋 Hi there，I'm [ReaJason](https://reajason.top)
 
 - ❄I'm a programming amateur.
-- 🔥I'm learning Data Structure & Algorithm.
-- ⚡I'm hunting for a back-end job
-- 📫contact me by reajason@163.com
+- 🔥I'm learning Computer Networking.
+- ⚡I'm working on Java.
+- 📫contact me by reajason1225@gmail.com
 
 ## 🎨 Latest blogs
 
