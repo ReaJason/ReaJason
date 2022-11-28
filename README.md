@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [GitHubActions](https://reajason.github.io/2022/11/21/GitHubActions/)
 - [突如其来政策](https://reajason.github.io/2022/09/21/HardExperience/)
 - [记一次失败的项目经验](https://reajason.github.io/2022/07/11/FailureProjectExperience/)
-- [Code Completion 代码大全读书笔记](https://reajason.github.io/2022/05/05/CodeCompletion/)
 
 [>>> More](https://reajason.github.io/archives/)
 
