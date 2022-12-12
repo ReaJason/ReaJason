@@ -7,9 +7,9 @@
 
 ## 🎨 Latest blogs
 
+- [2022年度总结](https://reajason.github.io/2022/12/11/2022AnnualSummary/)
 - [GitHubActions](https://reajason.github.io/2022/11/21/GitHubActions/)
 - [突如其来政策](https://reajason.github.io/2022/09/21/HardExperience/)
-- [记一次失败的项目经验](https://reajason.github.io/2022/07/11/FailureProjectExperience/)
 
 [>>> More](https://reajason.github.io/archives/)
 
