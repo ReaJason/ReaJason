@@ -18,8 +18,7 @@ jobs:
       - name: Install Python
         run: |
           sudo apt update && \
-          sudo apt install python3 && \
-          pip3 install requests lxml
+          sudo apt install python3
 
       - name: Update README.md
         run: |
@@ -27,7 +26,7 @@ jobs:
 
       - name: commit
         run: |
-          git config --global user.email 1587047405@qq.com
+          git config --global user.email reajason1225@gmail.com
           git config --global user.name ReaJason
           git add .
           git commit -m "update"
