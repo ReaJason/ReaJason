@@ -2,37 +2,37 @@ name: Update README.md
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
-  schedule:
-    - cron: 0 0 * * 1
+    branches: [master]
+  # schedule:
+  #   - cron: 0 0 * * 1
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Install Python
-      run: |
-        sudo apt update && \
-        sudo apt install python3 && \
-        pip3 install requests lxml
+      - name: Install Python
+        run: |
+          sudo apt update && \
+          sudo apt install python3 && \
+          pip3 install requests lxml
 
-    - name: Update README.md
-      run: |
-        python3 update.py
+      - name: Update README.md
+        run: |
+          python3 update.py
 
-    - name: commit
-      run: |
-        git config --global user.email 1587047405@qq.com
-        git config --global user.name ReaJason
-        git add .
-        git commit -m "update"
+      - name: commit
+        run: |
+          git config --global user.email 1587047405@qq.com
+          git config --global user.name ReaJason
+          git add .
+          git commit -m "update"
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
