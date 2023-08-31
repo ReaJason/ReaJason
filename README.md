@@ -1,4 +1,4 @@
-## 👋 Hi there，I'm [ReaJason](https://reajason.eu.org)
+## 👋 Hi there，I'm <a href="https://reajason.eu.org" target="_blank">ReaJason</a>
 
 - 🔥I'm a programming amateur.
 - ❄I'm learning Cyber Security.
