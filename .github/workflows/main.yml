@@ -1,37 +1,19 @@
 name: Update README.md
 
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-  # schedule:
-  #   - cron: 0 0 * * 1
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 * * *
 
 jobs:
-  build:
+  fetch:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Install Python
-        run: |
-          sudo apt update && \
-          sudo apt install python3
-
+      - uses: actions/checkout@v4
       - name: Update README.md
         run: |
           python3 update.py
-
-      - name: commit
-        run: |
-          git config --global user.email reajason1225@gmail.com
-          git config --global user.name ReaJason
-          git add .
-          git commit -m "update"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Upload
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "docs: update README"

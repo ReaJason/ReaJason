@@ -1,12 +1,29 @@
-with open('README.md', 'w', encoding='utf-8') as f:
-    f.write('''## 👋 Hi there，I'm [ReaJason](https://reajason.eu.org)
+import requests
+from lxml import etree
 
-- ❄I'm a programming amateur.
-- 🔥I'm learning Computer System.
-- ⚡I'm working on Java & Python.
-- 📫contact me by reajason1225@gmail.com
+if __name__ == '__main__':
+    domain = "https://reajason.eu.org"
+    page_res = requests.get(f"{domain}/writing")
+    html = etree.HTML(page_res.text)
+    post_list = []
+    for li in html.xpath('//main/div[2]/ol/li')[:5]:
+        a_tag = li.xpath('.//div//a')
+        href = a_tag[0].get('href') if a_tag else None
+        title = a_tag[0].text if a_tag else None
+        subtitle_p = li.xpath('.//p[1]')
+        subtitle = subtitle_p[0].text.strip() if subtitle_p else None
+        date_p = li.xpath('.//p[2]')
+        date = date_p[0].text.strip() if date_p else None
+        post_list.append(f"- [{title} - {subtitle}]({domain}{href})（{date}）")
+    with open('README.md', 'w', encoding='utf-8') as f:
+        f.write(f'''## 👋 Hi there，I'm <a href="https://reajason.eu.org" target="_blank">ReaJason</a>
 
-## 🔰 Statistics
+- 🔥 I'm a programming amateur.
+- ❄ I'm learning Java Web Cyber Security.
+- ⚡ I'm working on Java(RASP).
+- 📫 contact me by reajason1225@proton.me.
 
-![ReaJason's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reajason&show_icons=true&theme=tokyonight&cache_seconds=1800)
+### Latest Blogs
+
+{'\n'.join(post_list)}
 ''')
