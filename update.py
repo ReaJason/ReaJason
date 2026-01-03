@@ -6,15 +6,13 @@ if __name__ == '__main__':
     page_res = requests.get(f"{domain}/writing")
     html = etree.HTML(page_res.text)
     post_list = []
-    for li in html.xpath('//main/div[2]/ol/li')[:5]:
-        a_tag = li.xpath('.//div//a')
-        href = a_tag[0].get('href') if a_tag else None
-        title = a_tag[0].text if a_tag else None
-        subtitle_p = li.xpath('.//p[1]')
-        subtitle = subtitle_p[0].text.strip() if subtitle_p else None
-        date_p = li.xpath('.//p[2]')
-        date = date_p[0].text.strip() if date_p else None
-        post_list.append(f"- [{title} - {subtitle}]({domain}{href})（{date}）")
+    for li in html.xpath('//main//ul[@class="flex flex-col gap-4"]/li')[:5]:
+        a_tag = li.xpath('.//a')[0]
+        href = a_tag.get('href')
+        title = a_tag.xpath('.//span[1]')[0].text.strip()
+        subtitle = a_tag.xpath('.//span[2]')[0].text.strip()
+        date = a_tag.xpath('.//span[3]')[0].text.strip()
+        post_list.append(f"- [{title} - {subtitle}]({domain}{href})({date})")
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(f'''## 👋 Hi there，I'm <a href="https://reajason.eu.org" target="_blank">ReaJason</a>
 
